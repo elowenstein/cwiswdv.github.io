@@ -10,7 +10,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>Contact Form Example</title>
 <body>
-    <form action="mailto:elisalowenstein@cwi.edu?subject=Personal Portfolio Mail" enctype="text/plain" method="POST">
+    <form action="mailto:elisalowenstein@cwi.edu?subject=Personal Portfolio Mail" enctype="text/plain" method="GET">
 		<label for="company">Company:</label><br> 
 		<input type="text" name="compName" size="50" id="company"><br>
 		
@@ -20,7 +20,7 @@
 		<label for="comment">Enter your comments:</label><br>
 		<textarea cols="100" rows="10" name="comment"></textarea><br><br>
 		
-		<button type="submit" name="submit1" value="submit1" onclick="this.value='submit1' ">Submit Form</button>
+                <input type="submit" id="submit" value="Submit With Get" class="btn">
      </form>
   </body>
 </html>
