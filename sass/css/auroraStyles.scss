@@ -1,0 +1,69 @@
+/* Instructor File */
+$colour-primary: #15DEA5;
+$colour-accent: #FFF;
+$colour-bakgrd: #001534;
+$colour-alert: #D8464B;
+$heading-shadow-size: .25rem;
+
+$pad15: 1.5rem;
+
+@mixin heading-shadow($colour:darken($colour-primary,30%), $offset: $heading-shadow-size){
+    text-shadow: $offset $offset $colour;
+}
+@mixin color-brand($cbckgrd, $caccent) {
+    background: $cbckgrd;
+    color: $caccent;
+}
+@mixin borders($bwidth, $bstyle, $bcolor) {
+    border: $bwidth $bstyle $bcolor;
+}
+
+.form {
+    width: 100%;
+    padding-bottom: $pad15;
+    &__heading {
+        width: 100%;
+        @include heading-shadow;
+        @include color-brand($colour-primary,$colour-accent);        
+        line-height: 5rem;
+        padding: $pad15;
+    }
+    &__label {
+        color: $colour-bakgrd;
+        display: block;
+        font-size: 2rem;
+        line-height: 2rem;
+        padding-top: $pad15;
+    }
+    &__input {
+        width: 100%;
+        padding: $pad15;
+        @include color-brand($colour-bakgrd,#D6FFF5);
+        @include borders(.1rem, solid, $colour-primary);
+        font-weight: 900;
+        font-style: italic;
+        font-size: 2.75rem;
+    }
+    &__input:focus {
+        @include color-brand($colour-primary, $colour-accent);
+        @include borders(medium, none, $colour-accent);
+    }
+    &__input:invalid {
+        @include color-brand($colour-alert, $colour-accent);
+        @include borders(medium, none, $colour-alert);
+    }
+}
+
+.form__textarea {
+    width: 100%;
+    @include color-brand($colour-bakgrd, $colour-primary);
+    @include borders(.1rem, solid, $colour-primary);
+    outline: none;
+    padding: $pad15;
+    margin-bottom: $pad15;
+}
+// border-width	Specifies the width of the border. Default value is "medium"
+// border-style	Specifies the style of the border. Default value is "none"
+// border-color	Specifies the color of the border. Default value is the color of the text
+
+// $bwidth, $bstyle, $bcolor
