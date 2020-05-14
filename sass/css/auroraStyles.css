@@ -1,0 +1,55 @@
+.form {
+  width: 100%;
+  padding-bottom: 1.5rem;
+}
+
+.form__heading {
+  width: 100%;
+  text-shadow: 0.25rem 0.25rem black;
+  background: #15DEA5;
+  color: #FFF;
+  line-height: 5rem;
+  padding: 1.5rem;
+}
+
+.form__label {
+  color: #001534;
+  display: block;
+  font-size: 2rem;
+  line-height: 2rem;
+  padding-top: 1.5rem;
+}
+
+.form__input {
+  width: 100%;
+  padding: 1.5rem;
+  background: #001534;
+  color: #D6FFF5;
+  border: 0.1rem solid #15DEA5;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 2.75rem;
+}
+
+.form__input:focus {
+  background: #15DEA5;
+  color: #FFF;
+  border: medium none #FFF;
+}
+
+.form__input:invalid {
+  background: #D8464B;
+  color: #FFF;
+  border: medium none #D8464B;
+}
+
+.form__textarea {
+  width: 100%;
+  background: #001534;
+  color: #15DEA5;
+  border: 0.1rem solid #15DEA5;
+  outline: none;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+/*# sourceMappingURL=auroraStyles.css.map */
