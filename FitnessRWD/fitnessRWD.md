@@ -1,1 +1,2 @@
-/* Example of mobile first responsive web design
+# Responsive Web Design
+- Mobile First
