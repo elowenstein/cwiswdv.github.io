@@ -1,0 +1,175 @@
+﻿/* CSS Stylesheet */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('OpenSans-Light')
+
+body{
+    margin: 0rem;
+    font-family: 'Tahoma', 'Georgia', 'Arial', 'Helvetica', sans-serif;
+}
+
+header {
+    background: linear-gradient(to bottom right, lightgrey, transparent);
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto', 'Times New Roman', 'Arial', 'Helvetica', sans-serif;
+}
+
+/* Navigation Styles */
+
+nav {
+    display: flex;
+    font-family: 'Roboto', 'Times New Roman', 'Arial', 'Helvetica', sans-serif;
+}
+
+nav img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    padding: 1rem 2rem;
+    margin-left: 1rem;
+    background-color: cornflowerblue;
+    /* border-radius: 25px; */
+    text-transform: uppercase;
+    border-bottom: 5px solid rgba(0,0,0,0);
+}
+
+nav li:hover, .active{
+    border-bottom: 5px solid rgba(0,0,0,0.25);
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Sections */
+
+.box {
+    margin: 5rem;
+    border: 1px solid cornflowerblue;
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.two-panel{
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.small-title {
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    color: cornflowerblue;
+    position: relative;
+    top: -0.5rem;
+}
+
+.blocks li{
+    list-style: none;
+    padding: 1rem;
+    margin: 0.5rem;
+    background-color: dimgray;
+    color: white;
+}
+
+.outline{
+    background-color: rgba(0,0,0,0);
+}
+
+#block1{
+    background-color: tomato;
+}
+
+#block2 {
+    background-color: blueviolet;
+}
+
+#block3 {
+    background-color: cornflowerblue;
+}
+
+#block4 {
+    background-color: cadetblue;
+}
+
+/* Table Styles*/
+
+tbody tr:nth-child(even) {
+    background-color: rgba(0,0,0,0.04);
+}
+
+tbody {
+    background-color: rgba(0,0,0,0.03);
+}
+
+table td {
+    padding: 0.35rem;
+}
+
+thead, tfoot {
+    background-color: rgb(13, 182, 255, 0.13) ;
+}
+
+/* Contact Form */
+
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+form input {
+    padding: 5px;
+    margin: 5px;
+}
+
+form fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+fieldset label {
+    align-self: center;
+    text-transform: uppercase;
+    font-family: 'Open-Sans-Light', 'Tahoma', 'Arial', 'Helvetica', sans-serif;
+}
+
+form textarea{
+    height: 26vh;
+}
+
+form input{
+    width: 20vw;
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: dimgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img{
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem;
+}
