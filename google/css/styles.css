@@ -1,0 +1,8 @@
+/* Practice CustomFonts Style Sheet */
+
+.websafe{
+    font-family: Ubuntu, Courier, "Courier New";
+}
+.google {
+    font-family: Ubuntu, Georgia, serif;
+}
