@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>MarcusBarettaPortfolioExperiencePage</title>
+		<link rel="stylesheet" href="./CSS/StyleSheet.css">
+		<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+		<meta charset="UTF-8">
+		<meta name="description" content="Contact Marcus Baretta">
+		<meta name="keywords" content="Contact,Email,Phone number">
+	</head>
+	
+	<body>
+		<div class="largeText">
+			<h1><span>CONTACT ME</span></h1>
+		</div>
+		
+		<div class="container">
+			<button class="button button" onclick="window.location.href='index.html';">HOME</button>
+			<button class="button button" onclick="window.location.href='about.html';">ABOUT</button>
+			<button class="button button" onclick="window.location.href='projects.html';">EXPERIENCE</button>
+			<button class="button button" onclick="window.location.href='contact.html';">CONTACT</button>
+		</div>
+		
+		<br><fieldset>
+		<legend>Fill out the information below.</legend>
+			<div class="container">
+				<form>
+				
+					<label for="fname">First Name</label>
+					<input type="text" id="fname" name="fName" placeholder="John">
+					
+					<label for="lname">Last Name</label>
+					<input type="text" id="lname" name="lName" placeholder="Smith">
+					
+					<label for="email">Email</label>
+					<input type="text" id="email" name="email" placeholder="someone@example.com">
+					
+					<label for="tNumber">Phone Number</label>
+					<input type="text" id="tNumber" name="tele" placeholder="111-111-1111">
+			
+					<label for="hear">Where did you find me?</label>
+					<select id="hear" name="hear">
+						<option value="linked">LinkedIn</option>
+						<option value ="twit">Twitter</option>
+						<option value ="other">Other</option>
+					</select>
+				
+					<label for="subject">What would you like to tell me?</label>
+					<textarea id="subject" name="subject" placeholder="Write here"
+					style="height:100px"></textarea>
+					
+					<h3>Would you like me to contact you back?</h3>
+					<input type="radio" id="yes" name="replyResponse" value="yes">
+					<label for="yes">Yes</label><br>
+					<input type="radio" id="no" name="replyResponse" value="no">
+					<label for="no">No</label><br><br>
+			
+					<input type="submit" value="Submit Responses">
+				</form>
+			</div>
+		</fieldset>
+		
+		<footer>	
+			<div class="chunkFont">
+				<h1>My Links</h1>
+			</div>
+				
+			<a href="https://www.linkedin.com/in/marcusbaretta/"><img src="./Images/iconmonstr-linkedin-4-96.png" alt="linkedin icon">
+			</a>
+				
+			<a href="https://github.com/"><img src="./Images/iconmonstr-github-4-96.png" alt="github icon">
+			</a>
+				
+		</footer>
+	</body>
+
+</html>
